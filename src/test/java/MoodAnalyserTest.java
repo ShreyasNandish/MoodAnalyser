@@ -20,4 +20,12 @@ public class MoodAnalyserTest {
         String result = moodAnalyser.analyseMood();
         Assertions.assertSame("HAPPY",result);
     }
+
+    @Test
+    public void ShouldHandleNullMessage()
+    {
+        MoodAnalyser moodAnalyser = new MoodAnalyser();
+        String result = moodAnalyser.analyseMood();
+        Assertions.assertSame("HAPPY",result);
+    }
 }
