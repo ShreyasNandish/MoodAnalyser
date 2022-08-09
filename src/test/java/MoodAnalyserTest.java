@@ -16,6 +16,6 @@ public class MoodAnalyserTest {
     public void ShouldReturnSadMood()
     {
         String result = moodAnalyser.analyseMood("I am in Sad Mood");
-        Assertions.assertSame("Sad",result);
+        Assertions.assertSame("SAD",result);
     }
 }
